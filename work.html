@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="width">
+        <header class="header">
+            <h1><a href="main.html">Welcome to My Website</a></h1>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="work.html">Work</a></li>
+            </ul>
+        </header>
+            <div>
+                <h2>Works by Iannis Xenakis</h2>
+                <div>
+                    <p><i>Complete works ranged chronologically</i></p>
+                </div>
+                <button class="collapsible">Metastaseis</button>
+                <div class="content">
+                    <p>
+                        "Metastaseis" is one of Xenakis's earliest and most influential works, composed between 1953 and 1954. It is scored for 61 musicians, each playing a unique part, and is known for its use of glissandi and complex mathematical structures. This piece marks the beginning of Xenakis's exploration into using mathematical and architectural principles in music composition.
+                    </p>
+                    <ul>
+                        <li>orchestra</li>
+                        <li>2024</li>
+                        <li>15 minutes</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Pithoprakta</button>
+                <div class="content">
+                    <p>
+                        Orchestra
+                    </p>
+                    <ul>
+                        <li><strong>Instrumentation/Materials:</strong> Orchestra</li>
+                        <li><strong>Year of Completion:</strong> 1970</li>
+                        <li><strong>Duration:</strong> Open duration</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Persephassa (1969)</button>
+                <div class="content">
+                    <p>
+                        "Persephassa" is a work composed in 1969 for six percussionists. It was commissioned by the French Minister of Culture and premiered at the first Shiraz Arts Festival in Iran. The piece is notable for its spatial distribution of musicians, surrounding the audience and creating an immersive sound experience. "Persephassa" is a testament to Xenakis's innovative approach to rhythm and spatialization in music.
+                    </p>
+                    <ul>
+                        <li><strong>Instrumentation/Materials:</strong> Six percussionists with various instruments including drums, cymbals, and woodblocks</li>
+                        <li><strong>Year of Completion:</strong> 1969</li>
+                        <li><strong>Duration:</strong> Approximately 25 minutes</li>
+                    </ul>
+                </div>
+            </div>
+        <script>
+            document.querySelectorAll('.collapsible').forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                    const content = button.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        </script>
+    </div>
+    
+</body>
+</html>
